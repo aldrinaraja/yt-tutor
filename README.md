@@ -93,13 +93,59 @@ The application handles various common issues:
 - Network connectivity issues
 - Invalid YouTube URLs
 
+## Testing
+
+The project includes comprehensive unit tests covering all core functionality.
+
+### Running Tests
+
+**Basic test run:**
+```bash
+uv run pytest tests/ -v
+```
+
+**With coverage report:**
+```bash
+uv run pytest tests/ --cov=main --cov-report=term-missing
+```
+
+**Using the test runner script:**
+```bash
+# Basic tests
+python test_runner.py
+
+# With coverage
+python test_runner.py --coverage
+```
+
+### Test Coverage
+
+The test suite covers:
+- URL parsing and video ID extraction
+- Video title fetching (with fallback methods)
+- Transcript saving and loading
+- Error handling for various YouTube API issues
+- Path injection protection
+
+Current test coverage: ~67% of main functionality
+
+### Writing Tests
+
+When contributing new features:
+1. Add tests for new functions in `tests/test_main.py`
+2. Use pytest fixtures and mocking for external dependencies
+3. Test both success and failure scenarios
+4. Ensure tests are independent and can run in any order
+
 ## Contributing
 
 1. Fork the repository
 2. Create a feature branch
 3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
+4. Add tests for new functionality
+5. Run the test suite: `python test_runner.py --coverage`
+6. Ensure all tests pass and maintain good coverage
+7. Submit a pull request
 
 ## License
 
