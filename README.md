@@ -2,6 +2,8 @@
 
 An intelligent tutoring system that extracts transcripts from YouTube videos and allows you to ask questions about the content using AI. Perfect for students, researchers, and anyone looking to better understand video lectures and educational content.
 
+<img width="1001" height="839" alt="YT-Tutor" src="https://github.com/user-attachments/assets/298f4f8e-9b34-4a00-9625-bfef6c76f83f" />
+
 ## Features
 
 - **YouTube Transcript Extraction**: Automatically fetches English transcripts from YouTube videos
